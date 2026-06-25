@@ -1,0 +1,319 @@
+    1  cd
+    2  ls -la
+    3  sudo usermod -aG docker diaz
+    4  sudo su
+    5  sudo chmod -aG docker sartori
+    6  sudo usermod -aG docker diaz
+    7  git version
+    8  ansible version
+    9  docker --version
+   10  sudo apt} update
+   11  sudo apt updaate
+   12  sudo apt update
+   13  sudo apt install ansible -y
+   14  ansble --version
+   15  ansible --version
+   16  sudo apt update
+   17  # Add Docker's official GPG key:
+   18  sudo apt update
+   19  docker --version
+   20  sudo systemctl status docker
+   21  sudo apt docker.io -y
+   22  docker --version
+   23  sudo apt update
+   24  sudo apt install docker.io -y
+   25  docker --version
+   26  sudo fdisk -l
+   27  git version
+   28  git clone  https://github.com/upszot/UTN-FRA_SO_Examenes.git
+   29  cd -
+   30  cd ~
+   31  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+   32  source ~/.bashrc
+   33  ls
+   34  history -a
+   35  ls -
+   36  ls
+   37  ls ~/RTA_Examen_$(date +%Y%m%d)
+   38  history | grep script_Precondicion
+   39  sudo pvcreate /dev/sdc
+   40  sudo fkdisk /dev/sdc
+   41  sudo fdisk /dev/sdc
+   42  sudo fdisk -l /dev/sdc
+   43  sudo fdisk /dev/sdc
+   44  sudo fdisk -l /dev/sdc
+   45  sudo fdisk /dev/sdd
+   46  sudo kdisk -l /dev/sdc
+   47  sudo fdisk -l /dev/sdc
+   48  sudo fdisk -l /dev/sdd
+   49  sudo pvcreate /dev/sdd1 /dev/sdc1 /dev/sdc2 /dev/sdc3
+   50  sudo pvcreate /dev/sdc1 /dev/sdd1 /dev/sdd2
+   51  sudo pvs
+   52  sudo vgcreate vg_temp /dev/sdc1
+   53  sudo vgcreate vg_datos /dev/sdd1 /dev/sdd2
+   54  sudo pvs
+   55  sudo vgs
+   56  sudo lvcreate -L 512 -n lv_swap vg_temp
+   57  sudo vgs
+   58  sudo lvcreate  -l +100%FREE -n lv_swap vg_temp 
+   59  sudo lvs
+   60  sudo lvcrate -L 1536m -n lv_workareas vg_datos
+   61  sudo lvcrate -L lv_docker vg_datos
+   62  sudo lvcrate -L +5m lv_docker vg_datos
+   63  sudo lvcrate -L +5m -n lv_docker vg_datos
+   64  sudo lvcreate -L +5m -n lv_docker vg_datos
+   65  sudo lvs
+   66  sudo lvcreate -L 1536M -n lv_workareas vg_datos
+   67  sudo vgs
+   68  sudo lvcreate -l 100%FREE -n lv_workareas vg_datos
+   69  sudo lvs
+   70  sudo mkfs.ext4 /dev/vg_datos/lv_workareas
+   71  sudo mkfs.ext4 /dev/vg_datos/lv_docker
+   72  sudo mkswap /dev/vg_temp/lv_swap
+   73  free -h
+   74  cd /
+   75  ls
+   76  cd lib
+   77  ls
+   78  cd ..
+   79  ls
+   80  cd vat/ib
+   81  cd var/lib
+   82  ls
+   83  sudo mount /dev
+   84  sudo mount /dev/vg_datos/lv_workareas /work
+   85  iaz@parcial:/var/lib$ sudo mount /dev/vg_datos/lv_workareas /work
+   86  mount: /work: mount point does not exist.
+   87  sudo mount /dev/vg_datos/lv_workareas /var/lib/docker
+   88  df -h
+   89  lsblk-f
+   90  lsblk -f
+   91  cd /
+   92  ls
+   93  sudo mkdir work
+   94  ls 
+   95  sudo mount /dev/vg_datos/lv_docker /var/lib/work
+   96  sudo mount /dev/vg_datos/lv_workareas /var/lib/work
+   97  sudo mount /dev/vg_datos/lv_workareas /work/
+   98  df -h
+   99  sudo mount /dev/vg_datos/lv_docker /var/lib/docker
+  100  df -h
+  101  free -h
+  102  sudo swapon /dev/vg_temp-lv_swap 
+  103  sudo swapon /dev/vg_temp/lv_swap
+  104  free -h
+  105  sudo systemctl restart docker
+  106  sudo systemctl status docker
+  107  cat ~/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt
+  108  cd /usr/local/bin/
+  109  ls
+  110  sudo vim diaz_altaUser-groups-sh
+  111  cp AltaUser-groups.sh RTA_Examen_[fecha]/
+  112  cp diaz_altaUser-groups-sh
+  113  cp diaz_altaUser-groups-sh ~/RTA_Examen_20260623/Punto_B.sh
+  114  ls -l
+  115  sudo chmod +x /usr/local/bin/diaz_altaUser-groups-sh
+  116  ls -l /usr/local/bin
+  117  cat ~/RTA_Examen_20260623/Punto_B.sh
+  118  sudo vim /usr/local/bin/diaz_altaUser-groups-sh
+  119  cat /usr/local/bin/diaz_altaUser-groups-sh
+  120  sudo /usr/local/bin/diaz_altaUser-groups-sh diaz ~/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt
+  121  sudo vim /usr/local/bin/diaz_altaUser-groups-sh
+  122  cat /usr/local/bin/diaz_altaUser-groups-sh
+  123  sudo vim /usr/local/bin/diaz_altaUser-groups-sh
+  124  cat /usr/local/bin/diaz_altaUser-groups-sh
+  125  sudo /usr/local/bin/diaz_altaUser-groups-sh diaz ~/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt
+  126  grep "2P_" /etc/passwd
+  127  cp /usr/local/bin/diaz_altaUser-groups-sh ~/RTA_Examen_20260623/Punto_B.sh
+  128  ls ~/UTN-FRA_SO_Examenes/202406/docker
+  129  sudo chmod 0+x diaz_altaUser-groups-sh
+  130  ls -l
+  131  cd /home/diaz/UTN-FRA_SO_Examenes/202406/docker/
+  132  ls -l
+  133  mkdir share
+  134  cat index.html
+  135  vim index.html
+  136  cat index.html
+  137  history -a
+  138  ls ~/RTA_Examen_20260623
+  139  history -a
+  140  exit
+  141  su - diaz
+  142  exit
+  143  su vagrant
+  144  exit
+  145  cd
+  146  ls
+  147  cdUTN-FRA_SO_Examenes
+  148  ls
+  149  cd UTN-FRA_SO_Examenes
+  150  ñ
+  151  lsls
+  152  exit
+  153  sudo su diaz
+  154  ls
+  155  cd /home/diaz
+  156  ls
+  157  cd UTN-FRA_SO_Examenes
+  158  ls
+  159  cd UTN-FRA_SO_Examenes/202406/docker
+  160  sudo pvs
+  161  history | grep vim
+  162  sudo vim diaz_altaUser-groups-sh
+  163  cat /usr/local/bin/diaz_altaUser-groups-sh
+  164  grep "2P_" /etc/passwd
+  165  grep "2P_" /etc/group
+  166  ls -l ~/RTA_Examen_20260623
+  167  grep "Super" /etc/group
+  168  cat /usr/local/bin/diaz_altaUser-groups-sh
+  169  cat ~/RTA_Examen_20260623/Punto_B.sh
+  170  cd ~/UTN-FRA_SO_Examenes/202406/docker
+  171  cat index.htm
+  172  cat index.html
+  173  vim dockerfile
+  174  cat dockerfile
+  175  cat ~/UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt
+  176  cat /home/user/UTN_.../202406/bash_script/lista_usuarios.txt
+  177  cd UTN-FRA_SO_Examenes/202406/docker
+  178  cd diaz
+  179  exit
+  180  cd UTN-FRA_SO_Examenes/202406/docker
+  181  diaz@parcial:/home/vagrant$ sudo su diaz
+  182  diaz@parcial:/home/vagrant$ cd UTN-FRA_SO_Examenes/202406/docker
+  183  bash: cd: UTN-FRA_SO_Examenes/202406/docker: Permission denied
+  184  diaz@parcial:/home/vagrant$
+  185  cd /home/diaz/UTN-FRA_SO_Examenes/202406/docker}
+  186  cd /home/diaz/UTN-FRA_SO_Examenes/202406/docker
+  187  ls -l
+  188  cat dockerfile
+  189  mv dockerfile Dockerfile
+  190  ls -l
+  191  docker build -t web1-diaz
+  192  docker build -t web1-diaz.
+  193  docker build -t web1-diaz .
+  194  sudo docker build -t web1-diaz .
+  195  sudo docker images
+  196  docker login -u secretpoint
+  197  sudo docker push secretpoint/web1-diaz:latest
+  198  sudo docker push secretpoint/web1_diaz:latest
+  199  sudo docker tag web1-diaz:latest secretpoint/web1-diaz:latest
+  200  sudo docker images
+  201  sudo docker push secretpoint/web1-diaz:latest
+  202  sudo docker push secretpoint/web1_diaz:latest
+  203  sudo docker login -u secretpoint
+  204  sudo docker images
+  205  sudo docker tag web1-diaz:latest secretpoint/web1-diaz:latest
+  206  sudo docker push secretpoint/web1-diaz:latest
+  207  history -a
+  208  exit
+  209  sudo su diaz
+  210  exit
+  211  sudo su
+  212  cd /home/diaz/UTN-FRA_SO_Examenes/202406/docker
+  213  ls -l
+  214  cat index.html
+  215  vim run.sh
+  216  chmod +x run.sh
+  217  car run.sh
+  218  cat run.sh
+  219  sudo bash run.sh
+  220  sudo docker ps
+  221  cat dockerfile
+  222  sudo cat dockerfile
+  223  cat sudo Dockerfile
+  224  cat run.sh
+  225  sudo docker images
+  226  ls -l run.sh
+  227  sudo docker ps
+  228  sudo docker push secretpoint/web1-diaz:latest
+  229  sudo docker login -u secretpoint
+  230  sudo docker push secretpoint/web1-diaz:latest
+  231  $ vim
+  232  vim ~/RTA_Examen_20260623/Punto_C.sh
+  233  cd /home/diaz/UTN-FRA_SO_Examenes/202406/docker
+  234  ls -l
+  235  cat Dockerfile
+  236  cat run.sh
+  237  sudo docker images
+  238  sudo docker ps
+  239  ls -l /RTA_examen_20260623
+  240  ls -l ~/RTA_Examen_20260623
+  241  cat ~/RTA_Examen_20260623/Punto_C.sh
+  242  cat /RTA_Examen_20260623/Punto_C.sh
+  243  cat ~/RTA_Examen_20260623/Punto_C.sh
+  244  vim ~/RTA_Examen_20260623/Punto_C.sh
+  245  cat ~/RTA_Examen_20260623/Punto_C.sh
+  246  vim ~/RTA_Examen_20260623/Punto_C.sh
+  247  ls -l ~/RTA_Examen_20260623/Punto_C.sh
+  248  cd ~/UTN-FRA_SO_Examenes/202406/ansible
+  249  ls -R
+  250  ls -l
+  251  cd roles/multi_pruebas/tasks/
+  252  cat roles
+  253  sudo cat roles
+  254  cd roles
+  255  ls -l
+  256  cd /tmp/2do_parcial/alumno/datos_alumno.txt
+  257  cat playbook.yml
+  258  sudo cat playbook.yml
+  259  cd ~/UTN-FRA_SO_Examenes/202406/ansible
+  260  cat  playbook.yml
+  261  cat roles/2do_parcial/tasks/main.yml
+  262  cat inventory/host_vars/localhost.yml
+  263  cat roles/2do_parcial/vars/main.yml
+  264  cat roles/2do_parcial/defaults/main.yml
+  265  find roles/2do_parcial -type d
+  266  grep -R "template:" ~/UTN-FRA_SO_Examenes
+  267  grep -R "with_items" ~/UTN-FRA_SO_Examenes
+  268  cd ~/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial
+  269  mkdir templantes
+  270  vim templantes/datos_alumno.j2
+  271  vim templantes/datos_equipo-j2
+  272  vim taks/main.yml
+  273  cd ~/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial
+  274  vim tasks/main.tml
+  275  vim /tasks/main.yml
+  276  pwd
+  277  vim tasks/main.yml
+  278  cat roles/2do_parcial/tasks/main.yml
+  279  cat tasks/main.yml
+  280  vim tasks/main.yml
+  281  ls
+  282  vim tasks/main.yml
+  283  cat tasks/main.yml
+  284  vim tasks/main.yml
+  285  cat tasks/main.yml
+  286  vim tasks/main.yml
+  287  cat tasks/main.yml
+  288  vim tasks/main.yml
+  289  cd ~/UTN-FRA_SO_Examenes/202406/ansible
+  290  ansible-playbook -i inventory/hosts playbook.yml -K
+  291  cd ~/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial
+  292  ls -R
+  293  mv templantes templates
+  294  mv templates/datos_equipo-j2 templates/datos_equipo.j2
+  295  ls templates
+  296  cd ~/UTN-FRA_SO_Examenes/202406/ansible
+  297  ansible-playbook -i inventory/hosts playbook.yml -K
+  298  cat inventory/hosts
+  299  cat inventory/host_vars/localhost.yml
+  300  vim playbook.yml
+  301  ansible-playbook -i inventory/hosts playbook.yml -K
+  302  ls -R /tmp/2do_parcial
+  303  vim tasks/main.yml
+  304  cd ~/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial
+  305  ls -l tasks
+  306  cat tasks/main.yml
+  307  vim tasks/main.yml
+  308  cd ~/UTN-FRA_SO_Examenes/202406/ansible
+  309  ansible-playbook -i inventory/hosts playbook.yml -K
+  310  ls -R /tmp/2do_parcial
+  311  sudo apt install tree
+  312  tree /tmp/2do_parcial
+  313  rm /tmp/2do_parcial/equipo/datos_alumno.txt
+  314  tree /tmp/2do_parcial
+  315  ls -l ~/RTA_Examen_20260623
+  316  vim ~/RTA_Examen_20260623/Punto_D.sh
+  317  ls -l ~/RTA_Examen_20260623
+  318  vim ~/RTA_Examen_20260623/Punto_A.sh
+  319  history > ~/RTA_Examen_20260623/historia_completa.txt
